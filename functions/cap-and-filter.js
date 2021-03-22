@@ -1,4 +1,14 @@
-const capitalizeAndFilter = () => {};
+const capitalizeAndFilter = (array) => {
+  for (let index = 0; index < array.length; index++) {
+    const firstCharacter = array[index].charAt(0);
+
+    if (firstCharacter === 'F' || firstCharacter === 'f') {
+      array.splice(index, 1);
+    }
+  }
+
+  return array.map((a) => a.toUpperCase());
+};
 
 module.exports = capitalizeAndFilter;
 
