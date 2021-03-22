@@ -20,4 +20,15 @@ describe('copy and push function', () => {
 
     expect(newArray).toEqual(expectedArray);
   });
+
+  it('takes in an array and returns a copy with an additional item pushed into it', () => {
+    const oldArray = [12, 11, 25];
+    const controlArray = oldArray;
+    const newItem = 37;
+    const newArray = copyAndPush(oldArray, newItem);
+    const expectedArray = [12, 11, 25, 37];
+
+    expect(newArray).toEqual(expectedArray);
+    expect(oldArray).toEqual(controlArray);
+  });
 });
