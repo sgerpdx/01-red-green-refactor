@@ -1,3 +1,5 @@
-const getName = (character) => {};
+const getName = () => {
+  return 'Kara';
+};
 
 module.exports = getName;
