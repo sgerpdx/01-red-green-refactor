@@ -1,16 +1,33 @@
-const capitalizeAndFilter = (array) => {
-  for (let index = 0; index < array.length; index++) {
-    const firstCharacter = array[index].charAt(0);
+// const capitalizeString = (string) => {
+//   string.toUpperCase();
+// };
 
-    if (firstCharacter === 'F' || firstCharacter === 'f') {
-      array.splice(index, 1);
-    }
-  }
+// const effGate = (string) => {
+// if (string.charAt(0) !== 'F') {
+//     return string;
+// }
+// };
 
-  return array.map((a) => a.toUpperCase());
-};
+// const capitalizeAndFilter = (array, currentValue) => {
+//     const capsArray = array.map(capitalizeString(currentValue));
+//     let filteredArray = [];
+//     filteredArray.push(capsArray.filter(effGate(currentValue)));
+//     return filteredArray;
+// };
 
-module.exports = capitalizeAndFilter;
+// const oldCapitalizeAndFilter = (array) => {
+//   for (let index = 0; index < array.length; index++) {
+//     const firstCharacter = array[index].charAt(0);
+
+//     if (firstCharacter === 'F' || firstCharacter === 'f') {
+//       array.splice(index, 1);
+//     }
+//   }
+
+//   return array.map((a) => a.toUpperCase());
+// };
+
+// module.exports = capitalizeAndFilter;
 
 //   ## capitalizeAndFilter
 
