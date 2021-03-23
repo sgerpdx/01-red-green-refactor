@@ -1,18 +1,36 @@
-// const capitalizeString = (string) => {
-//   string.toUpperCase();
-// };
+const arrayUpper = (array) => {
+  return array.map((a) => a.toUpperCase());
+};
 
 // const effGate = (string) => {
-// if (string.charAt(0) !== 'F') {
-//     return string;
-// }
+//   let filteredArray = [];
+//   if (string.charAt(0) !== 'F') {
+//     filteredArray.push(string);
+//   }
+//   return filteredArray;
 // };
 
-// const capitalizeAndFilter = (array, currentValue) => {
-//     const capsArray = array.map(capitalizeString(currentValue));
-//     let filteredArray = [];
-//     filteredArray.push(capsArray.filter(effGate(currentValue)));
-//     return filteredArray;
+const capitalizeAndFilter = (array) => {
+  const capsArray = arrayUpper(array);
+  let filteredArray = [];
+  capsArray.map((string) => {
+    if (string.charAt(0) !== 'F') {
+      filteredArray.push(string);
+    }
+  });
+  return filteredArray;
+};
+
+// const extremeCapitalizeAndFilter = (array, currentValue) => {
+//   const capsArray = array.map(capitalizeString(currentValue));
+//   let filteredArray = [];
+//   filteredArray.push(capsArray.filter(effGate(currentValue)));
+//   return filteredArray;
+// };
+
+// const pastCapitalizeAndFilter = (array) => {
+//   let capsArray = arrayUpper(array);
+//   return capsArray.filter(effGate(currentValue));
 // };
 
 // const oldCapitalizeAndFilter = (array) => {
@@ -27,7 +45,7 @@
 //   return array.map((a) => a.toUpperCase());
 // };
 
-// module.exports = capitalizeAndFilter;
+module.exports = capitalizeAndFilter;
 
 //   ## capitalizeAndFilter
 
