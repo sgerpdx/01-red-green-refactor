@@ -5,5 +5,11 @@ describe('quote-fetching function', () => {
     const fetchedQuote = await fetchQuotes();
 
     expect(fetchedQuote).toEqual(expect.any(Object));
+
+    expect(fetchedQuote).toEqual({
+      name: expect.any(String),
+      text: expect.any(String),
+      image: expect.any(String),
+    });
   });
 });
